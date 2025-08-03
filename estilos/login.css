@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: 'android';
+    src: url(../fontes/idroid.otf);
+}
+
+body{
+    background-color: rgba(189, 184, 116, 0.664);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section{
+    background-color: white;
+    border-radius: 15px;
+    width: 350px;
+    height: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+div#imagem{
+    display: none;
+}
+
+div#formulario > h1{
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(20, 80, 20);
+    border-radius: 15px 15px 0px 0px;
+    color: white;
+    font-size: 2.2em;
+    font-family: 'android';
+}
+
+div#formulario > p{
+    padding: 15px 15px 10px 10px;
+}
+
+form{
+    padding: 15px 15px 10px 10px;
+}
+
+span.icone{
+    color: white;
+}
+
+.campo{
+    background-color: rgb(34, 104, 34);
+    border-radius: 10px;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.campo > input{
+    width: 86%;
+    height: 40px;
+    border-radius: 10px;
+    background-color:rgba(255, 248, 175, 0.89);
+    font-size: 1.1em;
+    text-indent: 5px;
+}
+
+div#satisfaction-level {
+    padding: 5px 5px 0px 0px
+}
+
+input#varia{
+    padding: 5px;
+    width: 90%;
+}
+
+input#enviar, #recuperar{
+    display: block;
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 1.1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+}
+
+.campo > input:focus{
+    background-color: rgb(255, 255, 255);
+}
+
+input#enviar{
+    background-color: rgb(20, 80, 20);
+    color: white;
+    border: 0px;
+}
+
+input#enviar:hover{
+    background-color: rgb(27, 61, 27);
+}
+
+input#recuperar{
+    color: rgb(78, 177, 78);
+    border: 1px solid rgb(78, 177, 78);
+    background-color: white;
+}
+
+input#recuperar:hover{
+    background-color:rgb(179, 255, 179);
+    color: rgb(29, 71, 29);
+}
+

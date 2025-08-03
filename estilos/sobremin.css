@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+main{
+    min-height: 1100px;
+}
+
+div#telefone > img{
+    width: 250px;
+    height: 504px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 160%;
+    left: 50%;
+}
+
+div#botao{
+    padding: 10px;
+    text-align: right;
+}
+
+div#botao > a  > img{
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+div#botao > a > img:hover{
+    border: 2px solid rgb(185, 255, 171);
+    transform: translate(-3px, -3px);
+    opacity: 0.8;
+    transition: translate 0.5s, opacity 0.5s;
+}
+
+iframe{
+    width: 212px;
+    height: 380px;
+    position: absolute;
+    top: 160%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    iframe, div#telefone > img{
+        top: 180%;
+    }
+    main{
+        height: 1300px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    main{
+        height: 1400px;
+    }
+    div#telefone > img{
+        top: 190%;
+    }
+    iframe{
+        top: 190%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        height: 1400px;
+    }
+    div#telefone > img{
+        width: 200px;
+        height: 403px;
+        top: 220%;
+    }
+    iframe{
+        top: 220%;
+        width: 169px;
+        height: 303px;
+    }
+}

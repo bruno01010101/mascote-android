@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+    section{
+        width: 60vw;
+    }
+    .campo > input{
+        width: 89%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    section{
+        width: 830px;
+        height: 580px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.541)
+    }
+    .campo > input{
+        width: 90%;
+        height: 50px;
+        font-size: 1.2em;
+    }
+
+    div#formulario{
+        width: 60%;
+        float: left;
+    }
+
+    div#formulario,#satisfaction-level > p, label{
+        font-size: 1.1em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    div#imagem{
+        display: block;
+        width: 40%;
+        height: 100%;
+        background-image: url(../imagens/android-fundo.png);
+        background-size: cover;
+        float: right;
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    div#formulario > h1{
+        background-color: white;
+        color: rgb(20, 80, 20);
+    }
+}
